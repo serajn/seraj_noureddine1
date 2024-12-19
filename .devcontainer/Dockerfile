@@ -7,8 +7,7 @@ RUN apt-get update && apt-get install -y \
     curl
 
 # Install Flask
-COPY .devcontainer/requirements.txt /workspace/requirements.txt
-RUN pip install --no-cache-dir -r /workspace/requirements.txt
+RUN pip install flask
 
 # Install Node.js and Vue CLI
 RUN curl -fsSL https://deb.nodesource.com/setup_16.x | bash -
